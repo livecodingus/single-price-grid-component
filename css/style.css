@@ -1,0 +1,84 @@
+/* ========== FUENTE ========= */
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+
+/* ===== RESET ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ===== VARIABLES ===== */
+:root {
+    --cyan-color: hsl(179, 62%, 43%);
+    --bright-yellow-color: hsl(71, 73%, 54%);
+    --light-gray-color: hsl(204, 43%, 93%);
+    --grayish-blue-color: hsl(218, 22%, 67%);
+    --white-color: #fafafa;
+}
+
+body {
+    background-color: var(--light-gray-color);
+    color: var(--white-color);
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+}
+
+.pg-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+/* ===== CARD ===== */
+.card {
+    width: 650px;
+}
+
+.card .top, .left, .right {
+    padding: 30px 40px;
+}
+
+
+/* ===== CARD TOP ===== */
+.card .top {
+    background-color: var(--white-color);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card .top h1 {
+    color: var(--cyan-color);
+}
+
+.card .top h2 {
+    color: var(--bright-yellow-color);
+    padding-top: 20px;
+}
+
+.card .top p {
+    color: var(--grayish-blue-color);
+    padding-top: 10px;
+    line-height: 26px;
+}
+
+
+/* ===== CARD LEFT ===== */
+.bottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.bottom .left {
+    background-color: var(--cyan-color);
+    border-bottom-left-radius: 10px;
+}
+
+.bottom .right {
+    background-color: hsl(179, 56%, 57%);
+    border-bottom-right-radius: 10px;
+}
